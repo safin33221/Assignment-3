@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,11 +13,18 @@
             extend: {
               colors: {
                 clifford: '#da373d',
+                'btn-bg': '#ABEF5F',
+                'para': '#494949',
+                'gradient-btn': 'rgba(171,239, 95,0.5)',
+                
               }
             }
           }
         }
     </script>
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/1f87d08519.js" crossorigin="anonymous"></script>
 
     <!-- monrope font link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +38,56 @@
     </style>
     <title>Rinterio.com</title>
 </head>
-<body>
-    
+<body class="manrope">
+    <!-- header section start -->
+    <header class="bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFF]">
+        <section class="container mx-auto">
+            <nav>
+                <div class="navbar bg-base-100 flex justify-between">
+                    <div class="navbar-start">
+                      <h1 class="text-2xl md:text-3xl font-extrabold  "> <i class="fa fa-arrow-right bg-btn-bg rounded-full p-2 -rotate-45"></i>Rinterio</a>
+                    </div>
+                    
+                    <div class="navbar-center hidden lg:flex">
+                      <ul class="menu menu-horizontal px-1">
+                        <li class="font-extrabold"><a href="">Home</a></li>
+                        <li><a href="">Service</a></li>
+                        <li><a href="">Portfolio</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Contact Us</a></li>
+                      </ul>
+                    </div>
+                    <div class="navbar-end hidden sm:flex">
+                        <div class=" lg:flex items-center space-x-4">
+                            <i class="fa fa-magnifying-glass"></i>
+                            <i class="fa fa-cart-shopping"></i>
+                            <a class="btn bg-btn-bg ">Book Consult<i class="fa fa-arrow-right bg-black text-white rounded-full p-2 -rotate-45"></i></a>
+                            
+                        </div>
+                        
+                      
+                    </div>
+                    <div class="sm:hidden mr-8 text-2xl bg-white rounded-full">
+                        <i class="fa fa-bars "></i>
+                    </div>
+                </div>
+            </nav>
+            <div class="px-8">
+                <div>
+                    <img src="./assets/banner.png" class="mx-auto" alt="">
+                </div>
+                <div class="text-center space-y-4">
+                    <h1 class="text-3xl  lg:text-5xl font-extrabold text-[#212121]">A barn house of this design has a <br> striking appearance</h1>
+                    <p class="text-para  text-center">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+
+                    </p>
+                    <button class=""><a class="btn bg-gradient-btn rounded-full">View Details<i class="fa fa-arrow-right bg-black text-white rounded-full p-2 -rotate-45"></i></a></button>
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- header section end -->
+
 </body>
 </html>
