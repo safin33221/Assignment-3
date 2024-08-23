@@ -12,7 +12,7 @@
           theme: {
             extend: {
               colors: {
-                clifford: '#da373d',
+                'banner-bg': 'linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);',
                 'btn-bg': '#ABEF5F',
                 'para': '#494949',
                 'gradient-btn': 'rgba(171,239, 95,0.5)',
@@ -42,7 +42,7 @@
 </head>
 <body class="manrope">
     <!-- header section start -->
-    <header class="bg-gradient-to-r from-[#FFFFFF] to-[#FFFFFF] pb-6">
+    <header class="bg-[linear-gradient(0.00deg, rgb(255, 255, 255),rgba(255, 255, 255, 0) 100%);] pb-6">
         <section class="container mx-auto">
             <nav>
                 <div class="navbar bg-base-100 flex justify-between">
@@ -69,8 +69,8 @@
                         
                       
                     </div>
-                    <div class="sm:hidden mr-8 text-2xl bg-white rounded-full">
-                        <i class="fa fa-bars "></i>
+                    <div class="sm:hidden mr-8 text-2xl bg-[#FFFFFF] shadow-xl rounded-full ">
+                        <i class="fa fa-bars  text-lg px-2"></i>
                     </div>
                 </div>
             </nav>
@@ -84,7 +84,9 @@
                         The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
 
                     </p>
-                    <button class=""><a class="btn bg-gradient-btn rounded-full">View Details<i class="fa fa-arrow-right bg-btn-bg  text-black rounded-full p-2 -rotate-45"></i></a></button>
+                    <div class="w-full lg:w-52 mx-auto">
+                        <a class="btn bg-gradient-btn font-extrabold  flex  rounded-full text-xl">View Details<i class="fa fa-arrow-right bg-btn-bg  text-black rounded-full p-2 -rotate-45"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -95,7 +97,7 @@
     
     <main class="bg-[#F4F4F4] ">
         <!-- about us section start -->
-        <section >
+        <section class="pt-8" >
             
             <div class=" container mx-auto pb-12">
                 <div>
@@ -184,7 +186,7 @@
                         </button>
                     </div>
                     <div class="text-center space-y-4">
-                        <h1 class="text-5xl font-extrabold text-primary-text">Our Works Process</h1>
+                        <h1 class=" text-3xl lg:text-5xl font-extrabold text-primary-text">Our Works Process</h1>
                         <p class="text-para w-4/5 mx-auto">
                             The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
                         </p>
@@ -225,7 +227,7 @@
                         </button>
                     </div>
                     <div class="text-center space-y-4">
-                        <h1 class="md:text-3xl lg:text-5xl font-extrabold text-primary-text">Our Latest Portfolio</h1>
+                        <h1 class="text-3xl lg:text-5xl font-extrabold text-primary-text">Our Latest Portfolio</h1>
                         <p class="text-para w-4/5 mx-auto">
                             The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
                         </p>
@@ -246,16 +248,16 @@
                             </div>
                         </div>
                         <div class="md:w-4/12 p-4 bg-white border-2 rounded-lg">
-                            <img src="./assets/img2.png" alt="" class="h-44">
+                            <img src="./assets/img2.png" alt="" class="lg:h-44 w-full">
                         </div>
 
                     </div>
                     <div class="md:flex gap-4 space-y-2 md:space-y-0">
                         <div class="  md:w-4/12 bg-white border-2 rounded-lg p-4">
-                            <img src="./assets/img3.png" alt="" class=" mx-auto w-full bg-cover">
+                            <img src="./assets/img3.png" alt="" class=" h-44 mx-auto w-full bg-cover">
                         </div>
                         <div class="  gap-4 md:flex md:w-8/12 bg-white border-2 rounded-lg p-4">
-                            <img src="./assets/img4.png" alt="" class="h-40 w-full">
+                            <img src="./assets/img4.png" alt="" class="h-40 w-full ">
                             <div class="">
                                 <h1 class="font-extrabold text-2xl ">
                                     Commercial
@@ -267,7 +269,10 @@
                             </div>
                         </div>
                         <div class="md:w-4/12 bg-white border-2 rounded-lg p-4">
-                            <img src="./assets/img5.png" alt="" class="mx-auto w-full">
+                            <img src="./assets/img5.png" alt="" class="mx-auto w-full h-44">
+                        </div>
+                        <div class="md:w-4/12 bg-white border-2 rounded-lg p-4 sm:hidden">
+                            <img src="./assets/img3.png" alt="" class="mx-auto w-full h-44 ">
                         </div>
                     </div>
 
@@ -420,16 +425,16 @@
     <!-- main section end -->
 
     <!-- footer section start -->
-     <footer class="bg-black">
+     <footer class="bg-black py-8">
         <div class="px-4 container mx-auto">
-            <div class="text-center w-2/3 mx-auto space-y-4">
+            <div class="text-center md:w-2/3 mx-auto space-y-4">
                 <h1 class="text-xl md:text-3xl font-extrabold  text-[#E9E9E9]"> <i class="fa fa-arrow-right bg-btn-bg rounded-full p-2 -rotate-45"></i>  Rinterio</a></h1>
                 <p class="text-[#737373]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, consequuntur praesentium! Quasi consequatur fugit reiciendis non quos nemo, 
                 
                 </p>
             </div>
             <div>
-                <ul class="flex justify-center gap-8 pt-8 text-[#E9E9E9] font-normal">
+                <ul class="flex justify-center items-center flex-col md:flex-row gap-6  md:gap-8 pt-8 text-[#E9E9E9] font-normal">
                     <li><a href="">Home</a></li>
                     <li><a href="">Service</a></li>
                     <li><a href="">Portfolio</a></li>
