@@ -18,6 +18,8 @@
                 'gradient-btn': 'rgba(171,239, 95,0.5)',
                 'primary-text': '#212121',
                 'secondary-text': '#1C1C1C',
+                'success-text': '#737373',
+                'error-text': '#E9E9E9',
                 
               }
             }
@@ -149,7 +151,7 @@
                 </div>
                 <div class="bg-white grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 py-8 mx-4 shadow-md gap-5 text-center rounded-lg ">
                     <div>
-                        <i class="fa-thin fa-message-lines text-2xl"></i>
+                        <i class="fa-solid fa-message-lines text-2xl"></i>
                         <h1 class="text-3xl font-extrabold ">235+</h1>
                         <p class="text-para">Happy Client Review</p>
                     </div>
@@ -185,7 +187,7 @@
                         <button class="bg-white rounded-full py-2 px-6 font-extrabold mx-auto"><i class="fa fa-arrow-right "></i> How we works
                         </button>
                     </div>
-                    <div class="text-center space-y-4">
+                    <div class="text-center space-y-4 mt-4">
                         <h1 class=" text-3xl lg:text-5xl font-extrabold text-primary-text">Our Works Process</h1>
                         <p class="text-para w-4/5 mx-auto">
                             Our work process is designed to ensure every project is seamless, collaborative, and tailored to your needs. We begin with a thorough consultation to understand your vision, goals, and requirements. 
@@ -242,7 +244,7 @@
                 <div class="space-y-4 mt-4 ">
                     <div class="sm:grid grid-cols-12 gap-4 space-y-4 md:space-y-0">
                         <!-- img1 -->
-                        <div class=" col-span-8 md:flex gap-3   bg-white border-2 p-4 rounded-lg">
+                        <div class="  md:col-span-12 lg:col-span-8 md:flex gap-3   bg-white border-2 p-4 rounded-lg">
                             <img src="./assets/img1.png" alt="" class="w-full ">
                             <div class="flex flex-col justify-between">
                                 <h1 class="font-extrabold text-2xl">
@@ -257,13 +259,13 @@
 
 
                         <!-- img2 -->
-                        <div class="sm:col-span-4 p-4 bg-white border-2 rounded-lg">
+                        <div class="md:col-span-6 lg:col-span-4 p-4 bg-white border-2 rounded-lg">
                             <img src="./assets/img2.png" alt="" class="w-full h-48">
                         </div>
 
 
                         <!-- img3 -->
-                        <div class="  sm:col-span-3 bg-white border-2 rounded-lg p-4 hidden sm:flex">
+                        <div class=" md:col-span-6 lg:col-span-3 bg-white border-2 rounded-lg p-4 hidden sm:flex">
                             <img src="./assets/img3.png" alt="" class="w-full h-48 ">
                         </div>
 
@@ -273,7 +275,7 @@
                         </div>
 
                         <!-- img4 -->
-                        <div class="  sm:col-span-6 md:grid grid-cols-2  gap-4 bg-white border-2 rounded-lg p-4">
+                        <div class=" md:col-span-12 lg:col-span-6 md:grid grid-cols-2  gap-4 bg-white border-2 rounded-lg p-4">
                             <img src="./assets/img4.png" alt="" class="w-full h-48 ">
                             <div class="justify-between ">
                                 <h1 class="font-extrabold text-2xl ">
@@ -288,13 +290,13 @@
 
 
                         <!-- img6(mobile) -->
-                        <div class="col-span-1 bg-white border-2 rounded-lg p-4 sm:hidden">
+                        <div class=" col-span-1 md:col-span-6 bg-white border-2 rounded-lg p-4 lg:hidden">
                             <img src="./assets/img3.png" alt="" class=" w-full h-48">
                         </div>
 
 
                         <!-- img5 -->
-                        <div class="sm:col-span-3 bg-white border-2 rounded-lg p-4">
+                        <div class="md:col-span-6 lg:col-span-3 bg-white border-2 rounded-lg p-4">
                             <img src="./assets/img5.png" alt="" class="w-full h-48 ">
                         </div>
 
@@ -327,13 +329,13 @@
 
 
                     <!-- card -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pt-10">
+                    <div class="grid grid-cols-1  lg:grid-cols-3 gap-6 pt-10">
                         <!-- card1 -->
-                        <div class="card bg-base-100 w md:w-full shadow-xl">
-                            <div>
+                        <div class="card bg-base-100 w md:w-full md:grid md:grid-cols-2 lg:grid-cols-1  shadow-xl">
+                            <div class="m-auto">
                                 <img
                                 src="./assets/article1.png"
-                                alt="Shoes" class="p-4" />
+                                alt="Shoes" class="p-4 "  />
                             </div>
                             <div class="card-body">
                                 <div class="flex  gap-4 text-para items-center">
@@ -354,8 +356,8 @@
                             </div>
                         </div>
                         <!-- card2 -->
-                        <div class="card bg-base-100  md:w-full shadow-xl">
-                            <div>
+                        <div class="card bg-base-100  md:w-full shadow-xl md:grid md:grid-cols-2 lg:grid-cols-1 ">
+                            <div class="m-auto">
                                 <img
                                 src="./assets/article2.png"
                                 alt="Shoes" class="p-4" />
@@ -379,8 +381,8 @@
                             </div>
                         </div>
                         <!-- card3 -->
-                        <div class="card bg-base-100  md:w-full shadow-xl">
-                            <div>
+                        <div class="card bg-base-100  md:w-full shadow-xl md:grid md:grid-cols-2 lg:grid-cols-1 ">
+                            <div class="m-auto">
                                 <img
                                 src="./assets/article3.png"
                                 alt="Shoes" class="p-4" />
@@ -413,7 +415,7 @@
 
 
         <!-- Let’s Discuss Next Project section start -->
-         <section class="bg-[url('./assets/bg.jpg')] pb-8">
+        <section class="bg-[url('./assets/bg.jpg')] bg-[rgba(0,0,0,0.1)] bg-blend-overlay pb-8">
             <div class=" w-4/5 md:w-3/5 mx-auto">
                 <div>
                     <div>
@@ -437,14 +439,14 @@
                         
                     </div>
                     <div class="w-full pt-4 space-y-3">
-                        <textarea placeholder="Write your message here" rows="4"
-                        class="textarea textarea-sm w-full ">
+                        <textarea  rows="4"
+                        class="textarea textarea-sm w-full focus:outline-none rounded-lg" placeholder=" Write your message here">
                         </textarea>
                         <a class="btn bg-btn-bg flex rounded-full font-bold">Send Mail<i class="fa fa-arrow-right bg-black text-white rounded-full border-none outline-none  p-2 -rotate-45"></i></a>
                     </div>
                 </div>
             </div>
-         </section>
+        </section>
         <!-- Let’s Discuss Next Project section end -->
 
 
@@ -452,16 +454,21 @@
     <!-- main section end -->
 
     <!-- footer section start -->
-     <footer class="bg-black py-8">
+    <footer class="bg-black py-8">
         <div class="px-4 container mx-auto">
             <div class="text-center md:w-2/3 mx-auto space-y-4">
-                <h1 class="text-xl md:text-3xl font-extrabold  text-[#E9E9E9]"> <i class="fa fa-arrow-right bg-btn-bg rounded-full p-2 text-black -rotate-45"></i>  Rinterio</a></h1>
-                <p class="text-[#737373]">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, consequuntur praesentium! Quasi consequatur fugit reiciendis non quos nemo, 
+                <h1 class="text-xl md:text-3xl font-extrabold  text-[#E9E9E9]"> <i class="fa fa-arrow-right bg-btn-bg rounded-full p-2 text-secondary-text -rotate-45"></i>  Rinterio</a></h1>
+                <p class="text-success-text">
+                    © 2024 Rinterio | Transforming Spaces, Enhancing Lives.
+                    Explore our diverse range of interior design tools and resources to create the home of your dreams.
+                    For inquiries, support, or feedback, reach out to us at support@rinterio.com.
+                    Follow us on Facebook, Instagram, and Pinterest for the latest design trends and inspiration. <br>
+                    Privacy Policy | Terms of Service.
                 
                 </p>
             </div>
             <div>
-                <ul class="flex justify-center items-center flex-col md:flex-row gap-6  md:gap-8 pt-8 text-[#E9E9E9] font-normal">
+                <ul class="flex justify-center items-center flex-col md:flex-row gap-6  md:gap-8 pt-8 text-error-text font-normal">
                     <li><a href="">Home</a></li>
                     <li><a href="">Service</a></li>
                     <li><a href="">Portfolio</a></li>
@@ -471,10 +478,10 @@
                 
             </div>
             <div class="text-center pt-8 ">
-                <a class="btn bg-btn-bg rounded-full">Book Consult<i class="fa fa-arrow-right bg-black text-white rounded-full p-2 -rotate-45"></i></a>
+                <a class="btn bg-btn-bg rounded-full flex lg:w-52 mx-auto">Book Consult<i class="fa fa-arrow-right bg-black text-white rounded-full p-2 -rotate-45"></i></a>
             </div>
         </div>
-     </footer>
+    </footer>
     <!-- footer section end -->
 </body>
 </html>
